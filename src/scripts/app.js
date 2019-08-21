@@ -2,7 +2,8 @@ console.log('hello');
 
 let buttonsOutline = document.querySelectorAll('.btn-outline');
 
-function classToggle () {
+function classToggle (e) {
+  e.preventDefault();
   this.classList.toggle('active');
 }
 
