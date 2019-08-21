@@ -2,6 +2,12 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+  &:hover .btn-main-small {
+    visibility: visible;
+  }
+  &:hover .no-hover {
+    background-color: $primary;
+  }
 
   .photo {
     position: relative;
@@ -14,9 +20,6 @@
     }
     overflow: hidden;
     align-items: flex-end;
-    &:hover .btn-main-small {
-      visibility: visible;
-    }
 
     .sale {
       position: absolute;
