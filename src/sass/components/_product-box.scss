@@ -5,7 +5,6 @@
 
   .photo {
     position: relative;
-    padding: 80% 10px 0 10px;
     background: {
       color: #f4f5f7;
       size: contain;
@@ -14,6 +13,7 @@
     }
     overflow: hidden;
     align-items: flex-end;
+    height: 300px;
 
     .sale {
       position: absolute;
@@ -29,6 +29,9 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      margin: 0 10px;
+      position: relative;
+      bottom: 34px;
     }
   }
 
