@@ -78,5 +78,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .old-price {
+      text-decoration: line-through;
+      color: rgb(169, 169, 169);
+    }
   }
 }
