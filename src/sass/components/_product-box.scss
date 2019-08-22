@@ -5,7 +5,7 @@
   &:hover .btn-main-small {
     visibility: visible;
   }
-  &:hover .no-hover {
+  &:hover .price > .btn-main-small {
     background-color: $primary;
   }
 
