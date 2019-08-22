@@ -14,7 +14,7 @@
       display: flex;
       background-color: #ffffff;
       font-size: 14px;
-      color: #212529;
+      color: $post-box-main;
 
       & > * {
         flex: 1 1 auto;
@@ -34,7 +34,7 @@
     padding: 25px;
 
     h5 {
-      color: #212529;
+      color: $post-box-main;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
