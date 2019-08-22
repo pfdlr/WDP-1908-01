@@ -55,11 +55,10 @@
       }
     }
   }
-
   &:hover {
     text-decoration: none;
-    .details {
-      color: #212529;
+    .cover .details {
+      color: $details-hover;
     }
     .btn-main {
       background-color: $primary;
