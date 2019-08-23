@@ -80,3 +80,34 @@
     align-items: center;
   }
 }
+
+//tablet portrait
+@media (max-width: 991px) {
+  .col-md {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+//tablet landscape
+@media (max-height: 768px) {
+  .col-md {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+
+//mobile portrait
+@media (max-width: 425px) {
+  .col-xs {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-height: 425px) {
+  .col-xs {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
