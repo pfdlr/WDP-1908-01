@@ -22,3 +22,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.hover-animation {
+  transition: $text-hover-delay, $background-hover-delay;
+}
