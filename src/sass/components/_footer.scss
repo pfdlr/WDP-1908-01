@@ -78,3 +78,9 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .copyright {
+    text-align: left !important;
+  }
+}
