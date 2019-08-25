@@ -1,12 +1,8 @@
 console.log('hello');
 
 const toggleBtn = document.querySelector('.navbar-toggler');
-const menu = document.querySelector('#menu');
+const overlay = document.querySelector('.overlay');
 
-if (window.screen.width < 768) {
-  menu.classList.remove('display');
-}
-
-toggleBtn.addEventListener('onclick', function () {
-  menu.classList.toggle('display');
+toggleBtn.addEventListener('click', function () {
+  overlay.classList.toggle('hidden');
 });

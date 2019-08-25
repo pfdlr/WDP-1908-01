@@ -1,4 +1,16 @@
 header {
+  .overlay {
+    z-index: 98;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .hidden {
+    display: none;
+  }
   .top-bar {
     background-color: $header-topbar-bg;
 
@@ -121,18 +133,12 @@ header {
     .container > .row {
       height: 84px;
     }
-
     .menu {
-      .display {
-        display: flex;
-        align-self: stretch;
-      }
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
-
         height: 84px;
 
         li {
@@ -250,37 +256,45 @@ header {
   }
 }
 @media (max-width: 767px) {
-  header .menu-bar .container > .row {
-    margin: 10px auto;
-    .navbar-toggler {
-      border: none;
-    }
-    .search-form {
-      .category {
-        display: none;
-      }
-    }
-    button {
-      span i {
-        font-size: 20px;
-        color: $text-color;
-      }
-    }
-    button:focus {
-      outline: 5px auto $primary;
-    }
-    .menu {
-      z-index: 100;
-      ul {
-        display: flex;
-        position: absolute;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        background-color: #fff;
-        border-bottom: 4px solid $text-color;
-        li {
-          display: block;
+  header {
+    .menu-bar {
+      position: absolute;
+      width: 100%;
+      z-index: 99;
+
+      .container > .row {
+        margin: 10px auto;
+        .navbar-toggler {
+          border: none;
+        }
+        .search-form {
+          .category {
+            display: none;
+          }
+        }
+        button {
+          span i {
+            font-size: 20px;
+            color: $text-color;
+          }
+        }
+        button:focus {
+          outline: 5px auto $primary;
+        }
+        .menu {
+          z-index: 100;
+          margin-top: 10px;
+          ul {
+            display: flex;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            background-color: #fff;
+            border-bottom: 4px solid $text-color;
+            li {
+              display: block;
+            }
+          }
         }
       }
     }
