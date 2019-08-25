@@ -84,5 +84,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .outlines .active {
+      background: $btn-active-bgd;
+      .far {
+        color: $favorite;
+      }
+      .fa-exchange-alt {
+        color: $compare;
+      }
+    }
   }
 }
