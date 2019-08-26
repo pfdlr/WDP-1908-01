@@ -52,8 +52,20 @@ document
       soption.style.display = 'none';
     }
   });
-// if clicked button else where addd/remove active class
+// if clicked button else where add/remove active class
 document.addEventListener('click', function () {
   document.getElementsByClassName('select-styled')[0].classList.remove('active');
   soption.style.display = 'none';
-});
+  });
+
+
+let buttonsOutline = document.querySelectorAll('.btn-outline');
+
+function classToggle (e) {
+  e.preventDefault();
+  this.classList.toggle('active');
+}
+
+buttonsOutline.forEach(function (el) {
+  el.addEventListener('click', classToggle);
+
