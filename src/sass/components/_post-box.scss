@@ -14,6 +14,7 @@
       display: flex;
       background-color: #ffffff;
       font-size: 14px;
+      color: $post-box-main;
 
       & > * {
         flex: 1 1 auto;
@@ -33,7 +34,7 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
+      color: $post-box-main;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -49,6 +50,21 @@
     .more {
       text-align: center;
       padding-top: 30px;
+      .btn-main {
+        display: inline-block;
+      }
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    .cover .details {
+      color: $details-hover;
+    }
+    .btn-main {
+      background-color: $primary;
+    }
+    h5 {
+      color: $primary;
     }
   }
 }
