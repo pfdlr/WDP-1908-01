@@ -57,3 +57,42 @@ document.addEventListener('click', function () {
   document.getElementsByClassName('select-styled')[0].classList.remove('active');
   soption.style.display = 'none';
 });
+
+/*
+    This script change tabs with fade effect
+*/
+
+let getAllTabs = document.querySelectorAll('.section--products .container');
+
+getAllTabs.forEach(showTab);
+
+function showTab (tab) {
+  if (tab.getAttribute('class') === 'container tab-pane fade in show') {
+    tab.style.display = 'block';
+  } else {
+    tab.style.display = 'none';
+  }
+
+  let buttonsTab = tab.querySelectorAll('.nav-tabs .nav-link');
+
+  buttonsTab.forEach(button => {
+    button.addEventListener('click', function (e) {
+      let getLink = e.path[0].getAttribute('href').split('-')[1];
+      let getCurrentTab = document.querySelector('.container.tab-pane.fade.show');
+      let getTargetTab = document.querySelector('.container.tab-pane.fade#' + getLink);
+
+      getCurrentTab.classList.remove('show');
+      getCurrentTab.classList.remove('in');
+      setTimeout(function () {
+        getCurrentTab.style.display = 'none';
+      }, 300);
+
+      getTargetTab.classList.add('show');
+      getTargetTab.classList.add('in');
+
+      setTimeout(function () {
+        getTargetTab.style.display = 'block';
+      }, 300);
+    });
+  });
+}
