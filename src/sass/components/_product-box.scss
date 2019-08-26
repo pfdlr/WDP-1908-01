@@ -2,6 +2,12 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+  &:hover .btn-main-small {
+    visibility: visible;
+  }
+  &:hover .price > .btn-main-small {
+    background-color: $primary;
+  }
 
   .photo {
     position: relative;
@@ -78,5 +84,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .outlines .active {
+      background: $btn-active-bgd;
+      .far {
+        color: $favorite;
+      }
+      .fa-exchange-alt {
+        color: $compare;
+      }
+    }
   }
 }

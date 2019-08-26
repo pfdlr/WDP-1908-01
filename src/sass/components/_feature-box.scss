@@ -50,7 +50,7 @@
     }
   }
 
-  &.active {
+  &:hover {
     i {
       background-color: $primary;
       color: #ffffff;
@@ -61,4 +61,11 @@
       color: $primary;
     }
   }
+}
+
+.feature-link {
+  &:hover {
+    text-decoration: none;
+  }
+  text-decoration: none;
 }
