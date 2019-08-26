@@ -21,6 +21,12 @@
     overflow: hidden;
     align-items: flex-end;
 
+    img {
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+
     .sale {
       position: absolute;
       top: -30px;
@@ -35,6 +41,8 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      position: relative;
+      bottom: 0;
     }
   }
 
