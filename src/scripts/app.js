@@ -86,6 +86,13 @@ toggleBtn.addEventListener('click', function () {
 });
   
 let buttonsOutline = document.querySelectorAll('.btn-outline');
+let loginText = document.querySelectorAll('.login');
+
+if (window.screen.width < 768) {
+  loginText.forEach(function (el) {
+    el.classList.add('hidden');
+  });
+}
 
 function classToggle (e) {
   e.preventDefault();

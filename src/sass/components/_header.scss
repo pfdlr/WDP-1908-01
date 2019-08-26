@@ -345,6 +345,7 @@ header {
   }
 }
 
+
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     .menu-bar .container > .row {
@@ -366,6 +367,47 @@ header {
 }
 @media (max-width: 767px) {
   header {
+
+    .top-bar {
+      .text-left {
+        flex-grow: 2;
+        padding: 0 10px;
+
+        ul li {
+          margin-right: 0.5rem;
+        }
+      }
+
+      .text-right {
+        flex-grow: 1;
+        padding: 0 10px;
+
+        ul li {
+          margin-left: 0.5rem;
+
+          .hidden {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .company-claim {
+      .text-left {
+        order: 3;
+        min-width: 100%;
+        font-size: 14px;
+        text-align: right !important;
+      }
+      .text-center {
+        margin-top: 5px;
+      }
+      .text-right {
+        height: 77px;
+        margin-top: 5px;
+      }
+    }
+    
     .menu-bar {
       position: absolute;
       width: 100%;
