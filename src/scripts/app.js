@@ -4,17 +4,16 @@ tns({
   container: '.product-carousel',
   items: 1,
   mouseDrag: true,
+  slideBy: 'page',
+  controlsText: ['<', '>'],
   responsive: {
     575: {
-      items: 1
-    },
-    768: {
       items: 2
     },
-    992: {
+    768: {
       items: 3
     },
-    1200: {
+    992: {
       items: 4
     }
   }
