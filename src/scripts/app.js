@@ -68,4 +68,4 @@ function classToggle (e) {
 
 buttonsOutline.forEach(function (el) {
   el.addEventListener('click', classToggle);
-
+});
