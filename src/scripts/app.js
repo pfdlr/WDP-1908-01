@@ -1,4 +1,23 @@
-console.log('hello');
+/* New furniture - carousel WDP190801-18*/
+/* global tns */
+tns({
+  container: '.product-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controlsText: ['<', '>'],
+  responsive: {
+    575: {
+      items: 2
+    },
+    768: {
+      items: 3
+    },
+    992: {
+      items: 4
+    }
+  }
+});
 
 /*
     This script replaceing default select style - hide select and replace with ul li list for styling new list
