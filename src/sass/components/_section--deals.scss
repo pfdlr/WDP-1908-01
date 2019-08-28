@@ -1,0 +1,128 @@
+.section--deals {
+  margin-bottom: 40px;
+
+  .left-box {
+    display: block;
+    height: 400px;
+    background: #fff url(../images/sofa.jpg) 0 / cover;
+
+    &:hover {
+      .overlay {
+        background: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .overlay {
+      position: relative;
+      top: 5%;
+      left: 5%;
+      height: 90%;
+      width: 90%;
+      background: rgba(0, 0, 0, 0.5);
+
+      .text-wrapper {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        color: #fff;
+        text-transform: uppercase;
+
+        h4 {
+          margin-bottom: 0;
+        }
+
+        h2 {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .percent {
+          padding: 0 10px;
+          display: inline-block;
+          outline: 2px solid #fff;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .right-box {
+    height: 400px;
+
+    .right-top {
+      display: block;
+      height: 190px;
+      margin-bottom: 20px;
+      background: $deals-top;
+
+      &:hover {
+        background: $deals-hover-top;
+      }
+
+      .text-wrapper {
+        position: absolute;
+        z-index: 100;
+        top: 10%;
+        right: 30%;
+        text-transform: uppercase;
+
+        h3,
+        h5 {
+          color: $text-color;
+        }
+
+        h3 span {
+          font-weight: bold;
+        }
+
+        h2 {
+          color: $primary;
+        }
+      }
+
+      .orangechair {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+
+      .redchair {
+        position: absolute;
+        top: 20px;
+        right: 5px;
+      }
+    }
+
+    .right-bottom {
+      display: block;
+      height: 190px;
+      background: $deals-bottom url(../images/bed.png) left/45% no-repeat;
+      position: relative;
+
+      &:hover {
+        background: $deals-bottom-hover url(../images/bed.png) left/45% no-repeat;
+      }
+
+      .text-wrapper {
+        text-transform: uppercase;
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        max-width: 50%;
+        text-align: right;
+
+        h5 {
+          color: $primary;
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        h6 {
+          font-size: 14px;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
