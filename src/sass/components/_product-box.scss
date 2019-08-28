@@ -58,6 +58,12 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+  &:hover .btn-main-small {
+    visibility: visible;
+  }
+  &:hover .price > .btn-main-small {
+    background-color: $primary;
+  }
 
   .photo {
     position: relative;
@@ -70,6 +76,12 @@
     }
     overflow: hidden;
     align-items: flex-end;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
 
     .sale {
       position: absolute;
@@ -85,6 +97,8 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      position: relative;
+      bottom: 0;
     }
   }
 
@@ -134,5 +148,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .outlines .active {
+      background: $btn-active-bgd;
+      .far {
+        color: $favorite;
+      }
+      .fa-exchange-alt {
+        color: $compare;
+      }
+    }
+  }
+}
+
+//tablet portrait
+@media (max-width: 991px) {
+  .col-md {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+//tablet landscape
+@media (max-height: 768px) {
+  .col-md {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+
+//mobile portrait
+@media (max-width: 567px), (max-height: 567px) {
+  .col-xs {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
