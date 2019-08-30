@@ -66,12 +66,14 @@
 }
 
 .brand-link {
-  &:hover {
-    text-decoration: none;
-  }
   text-decoration: none;
 
   .arrow-box {
+    &:hover {
+      text-decoration: none;
+      background-color: $primary;
+    }
+
     height: 92px;
     padding: 0px;
     display: table-cell;
