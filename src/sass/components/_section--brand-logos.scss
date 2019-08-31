@@ -1,11 +1,16 @@
 .section--brand-logos {
   padding: 4rem 0;
-  display: table;
+  //display: table;
   margin: 0 auto;
 
   .container {
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     padding: 24px 0;
+
+    .row {
+      position: relative;
+      margin: 0;
+    }
   }
 }
