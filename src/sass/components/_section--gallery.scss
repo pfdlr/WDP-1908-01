@@ -1,0 +1,83 @@
+.nav-tabs {
+  text-transform: uppercase;
+  font-weight: 700;
+  .nav-link {
+    color: $text-color;
+  }
+}
+
+.big-picture {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .big-product-layer {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    text-transform: uppercase;
+    span {
+      color: $gallery-price;
+      font-size: 35px;
+    }
+    h1 {
+      text-transform: capitalize;
+      color: $primary;
+      font-weight: 600;
+    }
+    .btn-price {
+      background-color: $gallery-price;
+      color: $select-background;
+      text-align: center;
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      text-decoration: none;
+    }
+  }
+}
+
+.carousel-item {
+  position: relative;
+  .actions {
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    .btn-outline {
+      margin: 2px;
+    }
+  }
+  .content {
+    position: absolute;
+    bottom: 50px;
+    right: 5px;
+    background-color: $select-background;
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+    .stars {
+      a {
+        text-decoration: none;
+        color: rgb(42, 42, 42);
+        @extend .far;
+        @extend .fa-star;
+
+        &.full {
+          @extend .fas;
+        }
+      }
+    }
+  }
+}
+
+.carousel-indicators {
+  position: absolute;
+  background-color: grey;
+  .thumb {
+    img {
+      height: 80px;
+      width: 80px;
+      display: inline-block;
+    }
+  }
+}
