@@ -1,4 +1,4 @@
-/* New furniture - carousel WDP190801-18*/
+/* New furniture - carousel WDP190801-18 */
 /* global tns */
 tns({
   container: '.product-carousel',
@@ -17,6 +17,14 @@ tns({
       items: 4
     }
   }
+});
+
+tns({
+  container: '.layer-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controlsText: ['<', '>']
 });
 
 /*
@@ -75,8 +83,7 @@ document
 document.addEventListener('click', function () {
   document.getElementsByClassName('select-styled')[0].classList.remove('active');
   soption.style.display = 'none';
-  });
-
+});
 
 const toggleBtn = document.querySelector('.navbar-toggler');
 const overlay = document.querySelector('.overlay');
@@ -84,7 +91,7 @@ const overlay = document.querySelector('.overlay');
 toggleBtn.addEventListener('click', function () {
   overlay.classList.toggle('hidden');
 });
-  
+
 let buttonsOutline = document.querySelectorAll('.btn-outline');
 let loginText = document.querySelectorAll('.login');
 
