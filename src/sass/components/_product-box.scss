@@ -1,3 +1,59 @@
+.tns-outer {
+  width: 100%;
+  position: relative;
+
+  .tns-nav {
+    position: absolute;
+    right: 0;
+    top: -43px;
+    @include md {
+      top: -10px;
+    }
+    @include sm {
+      right: 50%;
+      top: -25px;
+      transform: translate(50%, 0);
+    }
+  }
+  .tns-controls {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    button {
+      width: 30px;
+      height: 30px;
+      background-color: $primary;
+      color: #ffffff;
+      border: none;
+      border-radius: 50%;
+      font-size: 24px;
+      line-height: 30px;
+      margin: 0 5px 0 5px;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  .tns-nav {
+    background-color: white;
+    padding: 0 10px;
+    [aria-controls] {
+      width: 13px;
+      height: 13px;
+      padding: 0;
+      margin: 0 5px;
+      border-radius: 50%;
+      background: #ddd;
+      border: 0;
+    }
+
+    .tns-nav-active {
+      background-color: $primary;
+    }
+  }
+}
 .product-box {
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
@@ -21,6 +77,12 @@
     overflow: hidden;
     align-items: flex-end;
 
+    img {
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+
     .sale {
       position: absolute;
       top: -30px;
@@ -35,6 +97,8 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      position: relative;
+      bottom: 0;
     }
   }
 
@@ -93,5 +157,29 @@
         color: $compare;
       }
     }
+  }
+}
+
+//tablet portrait
+@media (max-width: 991px) {
+  .col-md {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+//tablet landscape
+@media (max-height: 768px) {
+  .col-md {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+
+//mobile portrait
+@media (max-width: 567px), (max-height: 567px) {
+  .col-xs {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
