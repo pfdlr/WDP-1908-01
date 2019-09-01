@@ -80,3 +80,15 @@ footer {
     }
   }
 }
+
+@media (max-width: 425px) {
+  .col-xs {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    img {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}

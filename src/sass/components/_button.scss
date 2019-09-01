@@ -22,6 +22,10 @@
   font-weight: 400;
 }
 
+.buttons > .btn-main-small {
+  visibility: hidden;
+}
+
 .btn-outline {
   @extend .hover-animation;
   display: inline-block;
