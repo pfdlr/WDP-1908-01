@@ -67,7 +67,7 @@ let getAllTabs = document.querySelectorAll('.section--products .container');
 getAllTabs.forEach(showTab);
 
 function showTab (tab) {
-  if (tab.getAttribute('class') === 'container tab-pane fade in show') {
+  if (tab.classList.contains('show')) {
     tab.style.display = 'block';
   } else {
     tab.style.display = 'none';
