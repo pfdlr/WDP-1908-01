@@ -37,6 +37,15 @@ tns({
   }
 });
 
+// feedback-carousel WDP190801-33
+tns({
+  container: '.feedback-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controls: false
+});
+
 /*
     This script replaceing default select style - hide select and replace with ul li list for styling new list
 */
@@ -101,7 +110,7 @@ const overlay = document.querySelector('.overlay');
 toggleBtn.addEventListener('click', function () {
   overlay.classList.toggle('hidden');
 });
-  
+
 let buttonsOutline = document.querySelectorAll('.btn-outline');
 let loginText = document.querySelectorAll('.login');
 
