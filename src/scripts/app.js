@@ -24,7 +24,7 @@ tns({
   items: 1,
   mouseDrag: true,
   slideBy: 'page',
-  controlsText: ['<', '>']
+  controlsContainer: '.arrows'
 });
 
 /*

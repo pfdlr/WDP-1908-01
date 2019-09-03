@@ -32,14 +32,15 @@
 
 .arrows {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
   .chevron {
     width: 50%;
     height: 30px;
     border: none;
     background-color: #2a2a2a;
     color: #ffffff;
-    &.active,
     &:hover {
       background-color: $primary;
     }
