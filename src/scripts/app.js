@@ -39,6 +39,24 @@ tns({
     }
   }
 });
+/* Latest blog - carousel WDP190801-20 */
+tns({
+  container: '.blog-carousel',
+  items: 1,
+  mouseDrag: true,
+  controlsText: ['<', '>'],
+  responsive: {
+    575: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 3
+    }
+  }
+});
 
 /*
     This script replaceing default select style - hide select and replace with ul li list for styling new list
