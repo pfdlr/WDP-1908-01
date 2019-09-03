@@ -18,6 +18,24 @@ tns({
     }
   }
 });
+/* Latest blog - carousel WDP190801-20 */
+tns({
+  container: '.blog-carousel',
+  items: 1,
+  mouseDrag: true,
+  controlsText: ['<', '>'],
+  responsive: {
+    575: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 3
+    }
+  }
+});
 
 /* Brands slider */
 tns({
@@ -42,6 +60,13 @@ toggleBtn.addEventListener('click', function () {
 });
 
 let buttonsOutline = document.querySelectorAll('.btn-outline');
+let loginText = document.querySelectorAll('.login');
+
+if (window.screen.width < 768) {
+  loginText.forEach(function (el) {
+    el.classList.add('hidden');
+  });
+}
 
 function classToggle (e) {
   e.preventDefault();
