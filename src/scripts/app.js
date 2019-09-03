@@ -25,7 +25,6 @@ tns({
   items: 6,
   mouseDrag: true,
   slideBy: 'page',
-  edgePadding: 23,
   prevButton: '#brands-prev',
   nextButton: '#brands-next',
   nav: false

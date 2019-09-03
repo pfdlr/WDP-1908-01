@@ -1,6 +1,5 @@
 .section--brand-logos {
   padding: 4rem 0;
-  //display: table;
   margin: 0 auto;
 
   .container {
@@ -11,6 +10,11 @@
     .row {
       position: relative;
       margin: 0;
+      justify-content: center;
+
+      .brands-slider-container {
+        width: 92%;
+      }
     }
   }
 }
