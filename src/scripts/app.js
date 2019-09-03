@@ -24,7 +24,18 @@ tns({
   items: 1,
   mouseDrag: true,
   slideBy: 'page',
-  controlsContainer: '.arrows'
+  prevButton: '.prev',
+  nextButton: '.next'
+});
+
+tns({
+  container: '.hot-deal-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controls: false,
+  autoplay: true,
+  speed: '3000'
 });
 
 /*

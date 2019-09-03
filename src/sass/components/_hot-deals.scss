@@ -1,4 +1,4 @@
-.dots-deal {
+.hot-deal {
   display: flex;
   padding: 5px 15px 0 15px;
   margin-left: 15px;
@@ -7,33 +7,24 @@
   color: #ffffff;
   font-size: 1.5rem;
   justify-content: space-between;
-  ul {
-    li {
-      display: inline-block;
-      margin-left: 0.5rem;
-      a {
-        display: block;
-        width: 13px;
-        height: 13px;
-        border-radius: 6px;
-        background-color: #ffffff;
-        &.active,
-        &:hover {
-          background-color: $primary;
-        }
-      }
-    }
-  }
+}
+
+.col-4 > .tns-outer > .tns-nav {
+  background-color: #2a2a2a;
+  margin-top: 10px;
+}
+
+.col-4 > .tns-outer > button {
+  display: none;
 }
 
 .product-box {
-  .photo {
+  .photo-deal {
     .buttons {
       .btn-deal {
         position: absolute;
-        bottom: 50%;
+        bottom: 160px;
         left: 35%;
-        transform: translateY(-50%);
       }
     }
     .counter {
