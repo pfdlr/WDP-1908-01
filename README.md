@@ -2,11 +2,13 @@
 
 ## Opis projektu
 
-DO UZUPEŁNIENIA
+Projekt grupowy w ramach kursu KODILLA Web Developer.
+Celem jest zaprojektowanie sklepu internetowego na podstawie szablonów .psd oraz uwag i wskazówek klienta.
+Jest to projekt szkoleniowy mający na celu naukę pracy zespołowej z wykorzystaniem repozytoriów git i oprogramowania do zarządzania projektami JIRA, oraz rozwój umiejetności programowania wykorzystujący technologie HTML, CSS i JS.
 
 ## Demo
 
-DO UZUPEŁNIENIA
+https://suspicious-mccarthy-ad0c34.netlify.com/
 
 ## Inicjacja projektu
 
@@ -34,4 +36,21 @@ dla plików, które zostały wybrane do za-commit'owania.
 
 ## Konwencje i dobre praktyki
 
-DO UZUPEŁNIENIA
+Korzystanie z narzędzia JIRA do zarządzania projektem
+Dzielenie zadań na mniejsze- poszczególne sekcje i komponenty w osobnych plikach html i css
+Odpowiednie formatowanie kodu - wcięcia
+Czytelne i krótkie komentarze
+Czytelne nazewnictwo klas zgodne z funkcją elementu
+Korzystanie z preprocesora SASS
+Oddzielenie języków
+Optymalizacja kodu: unikanie powtórzeń, używanie rozwiązań istniejących już w projekcie
+GIT Praca na repozytorium lokalnym i zdalnym
+Opisy commitów jezyku angielskim
+Krótkie nazwy wprowadzanych zmian rozpoczynające się od: add, change, remove, fix
+Nazwy branchy zgodne z nazwami tasków z JIRA
+Automatyzacja sprawdzania kodu z wykorzystaniem Git Hoocks
+Wykorzystanie frameworka Bootstrap
+Wykorzystanie pluginów JS jak Tiny-slider
+Wykorzystanie środowiska NODE i managera pakietów NPM do automatyzacji pracy
+Stosowanie camelCase
+Responsywnośc projektu - sostosowanie do róznych urzadzeń
