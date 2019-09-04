@@ -40,7 +40,7 @@ tns({
 /* Brands slider */
 tns({
   container: '.brands-slider',
-  items: 6,
+  items: 1,
   mouseDrag: true,
   slideBy: 'page',
   prevButton: '#brands-prev',
