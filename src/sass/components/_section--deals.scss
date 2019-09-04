@@ -126,3 +126,50 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .section--deals {
+    .right-box .right-top .orangechair {
+      top: 5px;
+      left: 10px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .right-box .right-top .redchair {
+      top: 85px;
+      right: 10px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .text-wrapper {
+      padding-left: 10px;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h5 {
+        font-size: 17px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section--deals {
+    .row {
+      display: block;
+
+      .col {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
