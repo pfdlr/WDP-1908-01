@@ -1,0 +1,55 @@
+.section-newsletter {
+  background-color: $newsletter-bgd-color;
+  padding: 3rem 0;
+
+  .row {
+    justify-content: center;
+    align-items: center;
+
+    span {
+      text-transform: uppercase;
+      color: $primary;
+      font-weight: bold;
+      display: inline-block;
+      min-height: 38px;
+      line-height: 38px;
+    }
+
+    .input-group {
+      .input-group-text {
+        border: none;
+        background: #fff;
+      }
+
+      .input-group-text::after {
+        content: "|";
+        color: #bbb;
+        padding-left: 0.75rem;
+      }
+
+      .form-control {
+        border: none;
+      }
+    }
+
+    form i {
+      color: $primary;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .form-control {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-newsletter {
+    margin-top: 104px; //delete this, when other sections are added
+
+    .row {
+      display: block;
+    }
+  }
+}
