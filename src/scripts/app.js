@@ -40,12 +40,32 @@ tns({
 /* Brands slider */
 tns({
   container: '.brands-slider',
-  items: 6,
+  items: 1,
   mouseDrag: true,
   slideBy: 'page',
   prevButton: '#brands-prev',
   nextButton: '#brands-next',
-  nav: false
+  nav: false,
+  responsive: {
+    375: {
+      items: 1
+    },
+    575: {
+      items: 2
+    },
+    768: {
+      items: 3
+    },
+    992: {
+      items: 4
+    },
+    1024: {
+      items: 5
+    },
+    1224: {
+      items: 6
+    }
+  }
 });
 
 /*
