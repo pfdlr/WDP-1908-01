@@ -1,3 +1,24 @@
+// carusel WDP190801-22 right
+tns({
+  container: '.layer-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  prevButton: '.prev',
+  nextButton: '.next'
+});
+
+// carousel WDP190801-22 left
+tns({
+  container: '.hot-deal-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controls: false,
+  autoplay: true,
+  speed: '3000'
+});
+
 /* New furniture - carousel WDP190801-18 */
 /* global tns */
 tns({
