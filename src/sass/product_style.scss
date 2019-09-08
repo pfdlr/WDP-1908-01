@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+@import "bootstrap/bootstrap.scss";
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
+@import "fontawesome/brands";
+@import "fontawesome/regular";
+
+@import "components/header";
+@import "components/footer";
+
+@import "components/button";
+@import "components/product_section--header";
+@import "components/product_section--product-box";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hover-animation {
+  transition: $text-hover-delay, $background-hover-delay;
+}

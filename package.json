@@ -6,8 +6,10 @@
   "scripts": {
     "prewatch": "npm run clean",
     "watch": "parcel src/index.html --open --no-autoinstall --port 8080",
+    "watch": "parcel src/product.html --open --no-autoinstall --port 8080",
     "prebuild": "npm run clean",
     "build": "parcel build src/index.html",
+    "build": "parcel build src/product.html",
     "clean": "rimraf dist",
     "code-quality": "npm run format && npm run lint",
     "format": "prettier --write \"src/**/*.{js,html,scss}\"",
