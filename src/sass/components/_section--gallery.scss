@@ -87,6 +87,19 @@
         max-height: 100%;
       }
     }
+
+    .slider-box:not(.active) {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $details-hover;
+        opacity: 0.5;
+      }
+    }
   }
 
   .slider-link {
