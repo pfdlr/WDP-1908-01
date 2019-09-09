@@ -6,8 +6,10 @@
   "scripts": {
     "prewatch": "npm run clean",
     "watch": "parcel src/index.html --open --no-autoinstall --port 8080",
+    "watch-product": "parcel src/product.html --open --no-autoinstall --port 8081",
     "prebuild": "npm run clean",
     "build": "parcel build src/index.html",
+    "build-product": "parcel build src/product.html",
     "clean": "rimraf dist",
     "code-quality": "npm run format && npm run lint",
     "format": "prettier --write \"src/**/*.{js,html,scss}\"",
@@ -35,7 +37,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.0",
-    "parcel-bundler": "^1.11.0",
+    "parcel-bundler": "^1.12.3",
     "posthtml-include": "^1.2.0",
     "prettier": "^1.15.3",
     "pretty-quick": "^1.8.0",
@@ -44,6 +46,7 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6"
+    "popper.js": "^1.14.6",
+    "tiny-slider": "^2.9.2"
   }
 }

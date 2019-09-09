@@ -1,0 +1,37 @@
+.brand-box {
+  height: 92px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding-top: 19px;
+}
+
+.brand-link {
+  position: absolute;
+  z-index: 50;
+
+  .arrow-box {
+    &:hover {
+      text-decoration: none;
+      background-color: $primary;
+    }
+
+    height: 92px;
+    padding: 0px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 33px;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    background-color: #2a2a2a;
+  }
+}
+
+#brands-prev {
+  left: 0;
+}
+
+#brands-next {
+  right: 0;
+}
