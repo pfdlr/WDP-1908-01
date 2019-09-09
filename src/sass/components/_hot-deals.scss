@@ -61,7 +61,36 @@
           }
         }
       }
+      .outlines {
+        display: flex;
+
+        @include lg {
+          flex-direction: column;
+        }
+
+        @include md {
+          flex-direction: column;
+        }
+      }
+
+      .prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+
+        @include lg {
+          width: 70%;
+        }
+
+        @include md {
+          flex-direction: column;
+          height: 75px;
+          width: 70%;
+        }
+      }
     }
+
     @include sm {
       display: none;
     }
@@ -93,7 +122,7 @@
 
         .bigger-slider {
           width: 100%;
-          height: 477px;
+          height: 475px;
           object-fit: cover;
 
           @include xl {
@@ -101,7 +130,7 @@
           }
 
           @include lg {
-            height: 395px;
+            height: 427px;
           }
 
           @include md {
