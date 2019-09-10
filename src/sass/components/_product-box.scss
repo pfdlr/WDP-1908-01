@@ -6,9 +6,6 @@
     position: absolute;
     right: 0;
     top: -43px;
-    @include md {
-      top: -10px;
-    }
     @include sm {
       right: 50%;
       top: -25px;

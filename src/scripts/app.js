@@ -58,6 +58,15 @@ tns({
   }
 });
 
+// feedback-carousel WDP190801-33
+tns({
+  container: '.feedback-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controls: false
+});
+
 /* Brands slider */
 tns({
   container: '.brands-slider',
