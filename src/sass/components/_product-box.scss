@@ -6,9 +6,6 @@
     position: absolute;
     right: 0;
     top: -43px;
-    @include md {
-      top: -10px;
-    }
     @include sm {
       right: 50%;
       top: -25px;
@@ -148,6 +145,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .old-price {
+      text-decoration: line-through;
+      color: rgb(169, 169, 169);
+    }
+
     .outlines .active {
       background: $btn-active-bgd;
       .far {

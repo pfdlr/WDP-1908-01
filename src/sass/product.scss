@@ -10,24 +10,29 @@
 @import "fontawesome/regular";
 
 @import "components/header";
+
+@import "components/product-newsletter";
+
 @import "components/footer";
 
 @import "components/button";
-@import "components/feature-box";
-@import "components/panel-bar";
-@import "components/post-box";
-@import "components/product-box";
-@import "components/feedback";
-@import "components/hot-deals";
-
-@import "components/brand-logos";
-@import "components/section--features";
-@import "components/section--brand-logos";
-@import "components/section--deals";
-
 
 body {
   font-family: "Poppins", sans-serif;
+
+  header {
+    .top-bar {
+      background-color: $footer-bg;
+    }
+
+    .company-claim {
+      background-color: $footer-claim-bg;
+
+      .cart .cart-box .cart-counter {
+        background-color: $footer-claim-bg;
+      }
+    }
+  }
 }
 
 .hover-animation {
