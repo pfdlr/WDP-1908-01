@@ -127,6 +127,7 @@ buttonsOutline.forEach(function (el) {
   el.addEventListener('click', classToggle);
 });
 
+
 /*
     This script change tabs with fade effect
 */
@@ -136,7 +137,7 @@ let getAllTabs = document.querySelectorAll('.section--products .container');
 getAllTabs.forEach(showTab);
 
 function showTab (tab) {
-  if (tab.getAttribute('class') === 'container tab-pane fade in show') {
+  if (tab.classList.contains('show')) {
     tab.style.display = 'block';
   } else {
     tab.style.display = 'none';
