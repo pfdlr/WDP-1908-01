@@ -1,3 +1,24 @@
+// carusel WDP190801-22 right
+tns({
+  container: '.layer-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  prevButton: '.prev',
+  nextButton: '.next'
+});
+
+// carousel WDP190801-22 left
+tns({
+  container: '.hot-deal-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controls: false,
+  autoplay: true,
+  speed: '3000'
+});
+
 /* New furniture - carousel WDP190801-18 */
 /* global tns */
 tns({
@@ -35,6 +56,15 @@ tns({
       items: 3
     }
   }
+});
+
+// feedback-carousel WDP190801-33
+tns({
+  container: '.feedback-carousel',
+  items: 1,
+  mouseDrag: true,
+  slideBy: 'page',
+  controls: false
 });
 
 /* Brands slider */
@@ -97,6 +127,7 @@ buttonsOutline.forEach(function (el) {
   el.addEventListener('click', classToggle);
 });
 
+
 /*
     This script change tabs with fade effect
 */
@@ -106,7 +137,7 @@ let getAllTabs = document.querySelectorAll('.section--products .container');
 getAllTabs.forEach(showTab);
 
 function showTab (tab) {
-  if (tab.getAttribute('class') === 'container tab-pane fade in show') {
+  if (tab.classList.contains('show')) {
     tab.style.display = 'block';
   } else {
     tab.style.display = 'none';
