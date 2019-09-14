@@ -16,14 +16,21 @@
 @import "components/panel-bar";
 @import "components/product-box";
 
+@import "components/product-newsletter";
+
 body {
   font-family: "Poppins", sans-serif;
+
+
+
   header {
     .top-bar {
       background-color: $footer-bg;
     }
+
     .company-claim {
       background-color: $footer-claim-bg;
+
       .cart .cart-box .cart-counter {
         background-color: $footer-claim-bg;
       }
