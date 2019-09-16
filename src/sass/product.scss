@@ -10,17 +10,21 @@
 @import "fontawesome/regular";
 
 @import "components/header";
-
-@import "components/product-newsletter";
 @import "components/product_section--header";
 @import "components/product_section--product-box";
-
+@import "components/product-newsletter";
 @import "components/footer";
 
 @import "components/button";
+@import "components/panel-bar";
+@import "components/product-box";
+
+@import "components/product-newsletter";
 
 body {
   font-family: "Poppins", sans-serif;
+
+
 
   header {
     .top-bar {
