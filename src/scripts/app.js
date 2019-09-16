@@ -1,3 +1,24 @@
+// modal
+var showModal = function (event) {
+  event.preventDefault();
+  document.querySelector('.overlay-modal').classList.add('show');
+};
+
+document.querySelector('.cart-box').addEventListener('click', showModal);
+
+var hideModal = function (event) {
+  event.preventDefault();
+  document.querySelector('.overlay-modal').classList.remove('show');
+};
+
+document.querySelector('.close-button').addEventListener('click', hideModal);
+
+document.querySelector('.overlay-modal').addEventListener('click', hideModal);
+
+document.querySelector('.basket-modal').addEventListener('click', function (event) {
+  event.stopPropagation();
+});
+
 // carusel WDP190801-22 right
 tns({
   container: '.layer-carousel',
@@ -126,7 +147,6 @@ function classToggle (e) {
 buttonsOutline.forEach(function (el) {
   el.addEventListener('click', classToggle);
 });
-
 
 /*
     This script change tabs with fade effect
