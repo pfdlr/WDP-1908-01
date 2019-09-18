@@ -1,0 +1,30 @@
+.product_section--header {
+  padding: 2rem 0;
+  margin: 0 auto;
+  background: $product-background;
+  height: 100px;
+
+  .container {
+    .row {
+      position: relative;
+      margin: 0;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 63px;
+      color: #dedede;
+      font-weight: 600;
+    }
+    .product_breadcrumbs {
+      float: right;
+      p {
+        display: inline;
+        font-size: 13px;
+        line-height: 63px;
+        color: #dedede;
+        font-weight: 400;
+      }
+    }
+  }
+}
