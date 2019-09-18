@@ -21,24 +21,28 @@ tns({
 
 /* New furniture - carousel WDP190801-18 */
 /* global tns */
-tns({
-  container: '.product-carousel',
-  items: 1,
-  mouseDrag: true,
-  slideBy: 'page',
-  controlsText: ['<', '>'],
-  responsive: {
-    575: {
-      items: 2
-    },
-    768: {
-      items: 3
-    },
-    992: {
-      items: 4
+let sliders = document.querySelectorAll('.product-carousel');
+sliders.forEach(function (value) {
+  tns({
+    container: value,
+    items: 1,
+    mouseDrag: true,
+    slideBy: 'page',
+    controlsText: ['<', '>'],
+    responsive: {
+      575: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
     }
-  }
+  });
 });
+
 /* Latest blog - carousel WDP190801-20 */
 tns({
   container: '.blog-carousel',
@@ -127,7 +131,6 @@ buttonsOutline.forEach(function (el) {
   el.addEventListener('click', classToggle);
 });
 
-
 /*
     This script change tabs with fade effect
 */
@@ -147,7 +150,7 @@ function showTab (tab) {
 
   buttonsTab.forEach(button => {
     button.addEventListener('click', function (e) {
-      let getLink = e.path[0].getAttribute('href').split('-')[1];
+      let getLink = e.target.getAttribute('href').split('-')[1];
       let getCurrentTab = document.querySelector('.container.tab-pane.fade.show');
       let getTargetTab = document.querySelector('.container.tab-pane.fade#' + getLink);
 
