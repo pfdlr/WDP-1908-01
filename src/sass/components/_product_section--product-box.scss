@@ -1,3 +1,4 @@
+
 .transparent {
   opacity: 0 !important;
 }
@@ -8,7 +9,8 @@
   }
 
   .wallpaper {
-    background: #898989;
+    background: $product-background;
+
     width: 100%;
     height: 300px;
     position: absolute;
@@ -31,7 +33,7 @@
 
     .product-box {
       .btn-outline.active {
-        background: #d58e32;
+        background: $primary;
         color: #fff;
         border: 0;
       }
@@ -113,6 +115,7 @@
           bottom: 0;
           margin: 0 10px 10px 0;
         }
+
         @keyframes fadein {
           from {
             opacity: 0;
@@ -121,6 +124,7 @@
             opacity: 1;
           }
         }
+
       }
 
       .photo-small {
@@ -147,6 +151,7 @@
           &:hover {
             transform: scale(1.5);
           }
+
         }
       }
     }
@@ -157,25 +162,26 @@
       .btn-outline i {
         padding: 7px 2px;
       }
+      .btn-outline.facebook {
 
-      .btn-outline.f {
         background-color: #3b5998;
         color: #fff;
       }
 
-      .btn-outline.g i {
+      .btn-outline.google i {
         color: #d62d20;
       }
 
-      .btn-outline.t i {
+      .btn-outline.tweet i {
         color: #4099ff;
       }
 
-      .btn-outline.p i {
+      .btn-outline.pinterest i {
         color: #c92228;
       }
 
-      .btn-outline.i i {
+      .btn-outline.linkedin i {
+
         color: #0077b5;
       }
 
@@ -190,7 +196,7 @@
         margin: 4px;
         text-align: center;
         font-size: 14px;
-        color: #2a2a2a;
+        color: $text-color;
         font-weight: 500;
       }
 
@@ -203,7 +209,7 @@
 
         &.q.active {
           background: transparent !important;
-          color: #d58e32 !important;
+          color: $primary !important;
           border: 1px solid #d58e32 !important;
         }
       }
@@ -234,7 +240,7 @@
         h5 {
           font-size: 22px;
           line-height: 41px;
-          color: #2a2a2a;
+          color: $text-color;
           font-weight: 600;
           text-align: left;
         }
