@@ -1,3 +1,24 @@
+// modal
+var showModal = function (event) {
+  event.preventDefault();
+  document.querySelector('.overlay-modal').classList.add('show');
+};
+
+document.querySelector('.cart-box').addEventListener('click', showModal);
+
+var hideModal = function (event) {
+  event.preventDefault();
+  document.querySelector('.overlay-modal').classList.remove('show');
+};
+
+document.querySelector('.close-button').addEventListener('click', hideModal);
+
+document.querySelector('.overlay-modal').addEventListener('click', hideModal);
+
+document.querySelector('.basket-modal').addEventListener('click', function (event) {
+  event.stopPropagation();
+});
+
 /*
 Overlay toggle for mobile navbar-toggler button
 */
