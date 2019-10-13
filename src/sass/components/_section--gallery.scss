@@ -61,6 +61,16 @@
         &.full {
           @extend .fas;
         }
+
+        &.active {
+          @extend .fas;
+          color: $primary;
+        }
+
+        &.hovered {
+          @extend .fas;
+          color: #eeaf5c;
+        }
       }
     }
   }
