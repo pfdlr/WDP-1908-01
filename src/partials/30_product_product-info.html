@@ -1,27 +1,58 @@
 <div class="product--section--product--info">
   <div class="container product-info">
     <ul class="tabs">
-      <li class="">description</li>
-      <li class="active">reviews</li>
-      <li class="">specification</li>
-      <li class="last">custom tab</li>
+      <li class=""><a class="tablinks" href="#description">description</a></li>
+      <li class="active"><a class="tablinks" href="#reviews">reviews</a></li>
+      <li class=""><a class="tablinks" href="#specification">specification</a></li>
+      <li class="last"><a class="tablinks" href="#custom">custom tab</a></li>
     </ul>
-    <p>There are no reviews for this product</p>
-    <h6>Add a review</h6>
-    <p>Your rating</p>
-    <div class="stars">
-      <span>Bad &nbsp;</span><a href="#" class="full"></a>
-      <a href="#" class="full"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a
-      ><span>&nbsp; Good</span>
+
+    <!-- description -->
+    <div id="description" class="tabcontent">
+      <h6>Lorem ipsum dolor sit amet dolor.</h6>
+      <p>
+        Lorem ipsum dolor sit amet nunc. Nunc elementum. Mauris arcu. Donec tempor.
+        Phasellus quis elit. Sed condimentum sagittis et, elementum.
+      </p>
     </div>
-    <form>
-      <legend>Your review</legend>
-      <textarea name="review" required></textarea><br /><br />
-      <div class="inputs">
-        <input type="text" name="usrname" placeholder="Name*" required />
-        <input type="email" name="email" placeholder="Email*" required />
-        <input type="submit" value="Submit" />
+
+    <!-- reviews -->
+    <div id="reviews" class="">
+      <p>There are no reviews for this product</p>
+      <h6>Add a review</h6>
+      <p>Your rating</p>
+      <div class="stars">
+        <span>Bad &nbsp;</span><a href="#" class="full"></a>
+        <a href="#" class="full"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a
+        ><span>&nbsp; Good</span>
       </div>
-    </form>
+      <form>
+        <legend>Your review</legend>
+        <textarea name="review" required></textarea><br /><br />
+        <div class="inputs">
+          <input type="text" name="usrname" placeholder="Name*" required />
+          <input type="email" name="email" placeholder="Email*" required />
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!-- specification -->
+    <div id="specification" class="tabcontent">
+      <h6>Nulla consequat eu, tellus.</h6>
+      <p>
+        Nulla iaculis quis, libero. Aliquam pharetra varius. Cum sociis natoque
+        penatibus et accumsan fringilla aliquet. Praesent nec lectus luctus diam.
+      </p>
+    </div>
+
+    <!-- custom tab -->
+    <div id="custom" class="tabcontent">
+      <h6>Aenean ligula faucibus justo nulla.</h6>
+      <p>
+        Morbi egestas, nulla fermentum in, purus. Maecenas tortor in wisi. Donec congue.
+        Donec nonummy rutrum. Pellentesque habitant morbi tristique libero.
+      </p>
+    </div>
   </div>
 </div>

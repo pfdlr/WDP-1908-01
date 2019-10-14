@@ -44,6 +44,11 @@
         color: $primary;
         background: #fff;
       }
+
+      .tablinks {
+        text-decoration: none;
+        color: inherit;
+      }
     }
     .active {
       border-bottom: 0;
@@ -74,8 +79,22 @@
       &.full {
         @extend .fas;
       }
+      &.active {
+        @extend .fas;
+        color: $primary;
+      }
+
+      &.hovered {
+        @extend .fas;
+        color: #eeaf5c;
+      }
     }
   }
+
+  .tabcontent {
+    display: none;
+  }
+
   legend {
     font-size: 14px;
     margin: 25px 0;
